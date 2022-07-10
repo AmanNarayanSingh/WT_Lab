@@ -1,0 +1,22 @@
+<html>
+<head>
+  <title>USN Validation using pattern matching</title>
+</head>
+<script type="text/javascript">
+  function usn(){
+    let text=prompt("Enter the USN:");
+    console.log(text);
+    let pattern=/[1-4]{1}[A-Z]{2}[1-9]{2}[A-Z]{2}[1-9]{3}/
+    res=text.match(pattern);
+    if(res!=null){
+      alert("The USN is a valid USN");
+    }
+    else{
+      alert("Invalid USN");
+    }
+  }
+
+</script>
+<body onload="usn()">
+</body>
+</html>

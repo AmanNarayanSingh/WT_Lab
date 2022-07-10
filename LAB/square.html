@@ -1,0 +1,50 @@
+<!-- <html>
+<head>
+  <title>Program 2b</title>
+</head>
+
+<script type="text/javascript">
+  function square_table(){
+      var n=prompt("enter a number");
+      if(n!=null && n>0)
+      {
+        var i=0;
+        document.write("<h2>The first " + n + " numbers and their squares are: </h2>");
+        document.write("<table border=1 align=center><tr><th>Number</th><th>Square</th></tr><br>");
+        for(i=1;i<=Number(n);i++){
+            document.write("<tr><td>" + i + "</td><td>" + i*i + "</td></tr><br>");
+        }
+        document.write("</table>");
+      }
+      else{
+        alert("No input");
+      }
+  }
+</script>
+<body onload="square_table()">
+</body>
+</html> -->
+<html>
+<head>
+  <title> Squares </title>
+</head>
+<script type="text/javascript">
+  function square(){
+    var n=prompt("Enter the number:","");
+    if(n!=null && n>0){
+      // var i=0;
+      document.write("The table of numbers and their corresponding squares are:\n");
+      document.write("<table border=1><tr><th>Number</th><th>Squares</th></tr><br>");
+      for(i=1;i<=Number(n);i++){
+        document.write("<tr><td>"+i+"</td><td>"+i*i+"</td></tr><br>");
+      }
+      document.write("</table>");
+    }
+    else{
+      alert("No input");
+    }
+  }
+</script>
+<body onload="square()">
+</body>
+</html>
